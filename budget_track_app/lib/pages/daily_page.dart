@@ -5,6 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class DailyPage extends StatefulWidget {
+  const DailyPage({super.key});
+
 
   @override
   _DailyPageState createState() => _DailyPageState();
@@ -94,8 +96,7 @@ class _DailyPageState extends State<DailyPage> {
                         ),
                       )
                       );
-                    }),
-                  )
+                    }),)
                 ],
               )
             ) ,
@@ -201,7 +202,7 @@ class _DailyPageState extends State<DailyPage> {
                     fontSize: 20,
                     fontWeight: FontWeight.w600,
                     color: black),
-                )
+                ),
               ],
             ),
           )

@@ -9,9 +9,9 @@ List days = [
 ];
 List months = [
   {"label": "2018", "day": "Jan"},
-  {"label": "2018", "day": "Feb"},
+  {"label": "2018", "day": "Fev"},
   {"label": "2018", "day": "Mar"},
-  {"label": "2018", "day": "Apr"},
-  {"label": "2018", "day": "May"},
+  {"label": "2018", "day": "Abr"},
+  {"label": "2018", "day": "Mai"},
   {"label": "2018", "day": "Jun"},
 ];

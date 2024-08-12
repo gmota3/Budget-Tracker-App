@@ -1,4 +1,6 @@
+import 'package:budget_track_app/pages/stats_page.dart';
 import 'package:budget_track_app/theme/color.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:animated_bottom_navigation_bar/animated_bottom_navigation_bar.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -25,9 +27,14 @@ class _RootAppState extends State<RootApp> {
       floatingActionButton: FloatingActionButton(
         onPressed: (){
           setTabs(4);
+
         },
         backgroundColor: primary,
-        child: const FaIcon(FontAwesomeIcons.plus, size: 25),
+        shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(50)
+        ),
+        child: const FaIcon(FontAwesomeIcons.plus, size: 25,),
+
 
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
@@ -39,9 +46,7 @@ class _RootAppState extends State<RootApp> {
       index: pageIndex,
       children: [
           DailyPage(),
-        const Center(
-          child: Text("Stats Page"),
-        ),
+          StatsPage(),
         const Center(
           child: Text("Budget Page"),
         ),
